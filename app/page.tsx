@@ -46,6 +46,46 @@ export default function Home() {
         }}></div>
       </div>
 
+      {/* Section 0: QR Code Page - Full Height */}
+      <section className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900 flex items-center justify-center relative z-10">
+        <div className="text-center px-6">
+          <div className="mb-8">            
+            {/* Large QR Code Container */}
+            <div className="relative mx-auto mb-8">
+              <div className="w-[600px] h-[600px] mx-auto bg-white rounded-3xl p-12 shadow-2xl shadow-cyan-400/20 transform hover:scale-105 transition-transform duration-300">
+                <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
+                  {/* Large QR Code using QR Server API */}
+                  <Image
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://codingclub.birlainstitute.co.in/"
+                    alt="QR Code for Coding Club Website"
+                    width={500}
+                    height={500}
+                    className="w-full h-full rounded-xl"
+                    unoptimized={true}
+                  />
+                </div>
+              </div>
+              
+              {/* Animated border rings */}
+              <div className="absolute -inset-6 border-4 border-cyan-400/30 rounded-3xl animate-pulse"></div>
+              <div className="absolute -inset-12 border-2 border-blue-400/20 rounded-3xl animate-ping"></div>
+            </div>
+            
+            {/* Website URL */}
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-cyan-400/20 max-w-2xl mx-auto">
+              <a 
+                href="https://codingclub.birlainstitute.co.in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-2xl text-blue-300 hover:text-blue-200 underline break-all transition-colors duration-200 font-mono"
+              >
+                https://codingclub.birlainstitute.co.in/
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 1: Welcome - Full Height */}
       <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center relative z-10">
         <div className="text-center px-6">
