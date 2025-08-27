@@ -50,12 +50,12 @@ export default function Home() {
       <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center relative z-10">
         <div className="text-center px-6">
           <div className="mb-8">
-            <div className="w-40 h-40 mx-auto bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center mb-8 shadow-lg shadow-cyan-400/30 animate-pulse overflow-hidden">
+            <div className="w-60 h-60 mx-auto bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center mb-8 shadow-lg shadow-cyan-400/30 animate-pulse overflow-hidden">
               <Image
                 src="/logo.jpeg"
                 alt="Coding Club Logo"
-                width={160}
-                height={160}
+                width={240}
+                height={240}
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
@@ -205,13 +205,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Secretary 2 - Harshit 2 */}
+            {/* Secretary 2 - Center Secretary */}
             <div className="group">
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl p-10 border border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-400/20 transform hover:-translate-y-2 h-[450px] flex flex-col items-center justify-center">
                 <div className="w-48 h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-cyan-400/20 overflow-hidden">
                   <Image
-                    src="/h2.jpeg"
-                    alt="Secretary 2"
+                    src="/fb8d44b9-9ba0-4a88-b0e5-9dcca67ce123.jpeg"
+                    alt="Center Secretary"
                     width={192}
                     height={192}
                     className="w-full h-full object-cover rounded-2xl"
