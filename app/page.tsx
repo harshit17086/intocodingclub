@@ -282,7 +282,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 4: Thank You - Full Height */}
+      {/* Section 4: Second QR Code Page - Full Height */}
+      <section className="min-h-screen bg-gradient-to-br from-green-900 via-teal-900 to-blue-900 flex items-center justify-center relative z-10">
+        <div className="text-center px-6">
+          <div className="mb-8">            
+            {/* Large QR Code Container */}
+            <div className="relative mx-auto mb-8">
+              <div className="w-[600px] h-[600px] mx-auto bg-white rounded-3xl p-12 shadow-2xl shadow-green-400/20 transform hover:scale-105 transition-transform duration-300">
+                <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
+                  {/* Large QR Code for Pixel App */}
+                  <Image
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://coding-club-pixel.vercel.app/"
+                    alt="QR Code for Coding Club Pixel App"
+                    width={500}
+                    height={500}
+                    className="w-full h-full rounded-xl"
+                    unoptimized={true}
+                  />
+                </div>
+              </div>
+              
+              {/* Animated border rings with green theme */}
+              <div className="absolute -inset-6 border-4 border-green-400/30 rounded-3xl animate-pulse"></div>
+              <div className="absolute -inset-12 border-2 border-teal-400/20 rounded-3xl animate-ping"></div>
+            </div>
+            
+            {/* Website URL */}
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-green-400/20 max-w-2xl mx-auto">
+              <a 
+                href="https://coding-club-pixel.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-2xl text-green-300 hover:text-green-200 underline break-all transition-colors duration-200 font-mono"
+              >
+                https://coding-club-pixel.vercel.app/
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: Thank You - Full Height */}
       <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center relative z-10">
         <div className="text-center px-6">
           <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-16 border border-gray-600/20 max-w-4xl">
